@@ -1,7 +1,8 @@
 package kr.ac.koreatech.swkang.contextualactionmode;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.view.ActionMode;
+//import androidx.appcompat.view.ActionMode;
+import android.view.ActionMode;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,9 +20,11 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView text = (TextView) findViewById(R.id.TextView01);
+        TextView text = findViewById(R.id.TextView01);
         text.setOnLongClickListener(this);
     }
+
+    // ActionMode.Callback interface 구현을 위해 필요한 메소ㅡ
 
     // startActionMode() 메소드가 호출될 때 호출되는 콜백 메소드
     @Override
@@ -66,7 +69,8 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         }
 
         // 컨텍스트 액션 모드 시작
-        mActionMode = startSupportActionMode(this);
+        //mActionMode = startSupportActionMode(this);
+        mActionMode = startActionMode(this);
         view.setSelected(true);
         return true;
     }
