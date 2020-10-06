@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView android:text="외부 컴포넌트 실행 예제"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Call"
+        android:id="@+id/call"
+        android:onClick="onClick"/>
+    <Button
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Map"
+        android:id="@+id/map"
+        android:onClick="onClick"/>
+    <Button
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Web browsing"
+        android:id="@+id/web"
+        android:onClick="onClick"/>
+    <Button
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Contacts"
+        android:id="@+id/contact"
+        android:onClick="onClick"/>
+    <Button
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Send an email"
+        android:id="@+id/email"
+        android:onClick="onClick"/>
+</LinearLayout>
