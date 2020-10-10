@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        tools:text="주문"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:text="피자"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/checkBox" />
+
+    <CheckBox
+        android:text="스파게티"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/checkBox2" />
+
+    <TextView
+        android:text="현재 개수 ="
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/count"
+        android:textSize="24sp" />
+
+    <Button
+        android:text="증가"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/count"
+        android:layout_toRightOf="@+id/checkBox2"
+        android:layout_toEndOf="@+id/checkBox2"
+        android:id="@+id/add" />
+
+    <Button
+        android:text="감소"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remove"
+        android:layout_alignBaseline="@+id/add"
+        android:layout_alignBottom="@+id/add"
+        android:layout_toRightOf="@+id/count"
+        android:layout_toEndOf="@+id/count" />
+</RelativeLayout>
